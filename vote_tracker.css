@@ -1,10 +1,20 @@
+
+body {
+  background-image: url(bacground2.png);
+}
 header {
   width: 100%;
-  height: 80px;
-  padding-top: 12px;
+  height: 100px;
+  margin-top: 30px;
+  padding-top: 6px;
+  background-color: #7BB892;
+  color: white;
+  border-bottom: 8px solid #297B48;
+  border-radius: 8px;
 }
 
 h1 {
+  padding-left: 40px;
   padding-bottom: 22px;
   vertical-align: middle;
 
@@ -21,19 +31,22 @@ img {
 }
 
 #chartContainer {
-  display: inline-block;
   height: 300px;
   width: 70%;
 }
 
+#data {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
 table {
-  display:inline-block;
   height:300px;
-  width:28;
-  padding-top: 20px;
+  /*width:28%;
+  padding-top: 20px;*/
   font-size: 18px;
 
-  border: 1px solid gray;
 }
 td {
   text-align: center;
@@ -45,11 +58,20 @@ tr:first-child{
 #bar {
   width: 0%;
   height: 20px;
-  background-color: #adadad;
+  background-color: #FF8023;
   text-align: center;
   color: #FFFFFF;
-
-  margin-top: 20px;
+  margin-top: 2px;
   border-radius: 8px;
-  transition: 2s;
+  transition: .8s;
+}
+
+ img {
+	transform: scale(1);
+	transition: .3s ease-in-out;
+
+}
+img:hover {
+  opacity: 0.8;
+	transform: scale(1.05);
 }
